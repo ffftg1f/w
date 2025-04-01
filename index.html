@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест на зависимость</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>Тест на зависимость</h1>
+    
+    <div class="test-container">
+        <div class="question">
+            <h3>Как часто вы играете в компьютерные игры?</h3>
+            <label>
+                <input type="radio" name="q1" value="3"> каждый день
+            </label>
+            <label>
+                <input type="radio" name="q1" value="2"> день через день
+            </label>
+            <label>
+                <input type="radio" name="q1" value="1"> когда нечем занятся
+            </label>
+        </div>
+
+        <div class="question">
+            <h3>По сколько часов обычно играете?</h3>
+            <label>
+                <input type="radio" name="q2" value="3"> более 3 часов
+            </label>
+            <label>
+                <input type="radio" name="q2" value="2"> 1-2 часа
+            </label>
+            <label>
+                <input type="radio" name="q2" value="1"> максимум 1 час
+            </label>
+        </div>
+
+        <div class="question">
+            <h3>Легко ли вам оторваться от игры?</h3>
+            <label>
+                <input type="radio" name="q3" value="3"> нет
+            </label>
+            <label>
+                <input type="radio" name="q3" value="2"> когда как
+            </label>
+            <label>
+                <input type="radio" name="q3" value="1"> да, достаточно легко
+            </label>
+        </div>
+
+        <div class="question">
+            <h3>Часто ли вы тратите свободное время на игры?</h3>
+            <label>
+                <input type="radio" name="q4" value="3"> всегда или почти всегда
+            </label>
+            <label>
+                <input type="radio" name="q4" value="2"> время от времени
+            </label>
+            <label>
+                <input type="radio" name="q4" value="1"> достаточно редко
+            </label>
+        </div>
+
+        <div class="question">
+            <h3>Пропускали ли вы важные мероприятия ради игры?</h3>
+            <label>
+                <input type="radio" name="q5" value="3"> да, часто
+            </label>
+            <label>
+                <input type="radio" name="q5" value="2"> да, один или два раза
+            </label>
+            <label>
+                <input type="radio" name="q5" value="1"> нет
+            </label>
+        </div>
+
+        <div class="question">
+            <h3>Какую роль в вашей жизни играют компьютерные игры?</h3>
+            <label>
+                <input type="radio" name="q6" value="3"> очень значительную
+            </label>
+            <label>
+                <input type="radio" name="q6" value="2"> достаточно важную
+            </label>
+            <label>
+                <input type="radio" name="q6" value="1"> вы легко обходитесь без них
+            </label>
+        </div>
+
+        <div class="question">
+            <h3>Часто ли вы садитесь за игры сразу после прихода домой?</h3>
+            <label>
+                <input type="radio" name="q7" value="3"> всегда или почти всегда
+            </label>
+            <label>
+                <input type="radio" name="q7" value="2"> время от времени
+            </label>
+            <label>
+                <input type="radio" name="q7" value="1"> как правило, нет
+            </label>
+        </div>
+
+        <button onclick="calculateScore()">Завершить тест</button>
+    </div>
+
+    <div class="result" id="result">
+        <h2>Ваш результат: <span id="score">0</span> баллов</h2>
+        <p id="comment"></p>
+    </div>
+
+</body>
+</html>
